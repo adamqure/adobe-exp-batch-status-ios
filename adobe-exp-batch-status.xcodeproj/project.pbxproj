@@ -15,6 +15,22 @@
 		DBC36BF723E36179000ED738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC36BF523E36179000ED738 /* LaunchScreen.storyboard */; };
 		DBC36C0223E36179000ED738 /* adobe_exp_batch_statusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C0123E36179000ED738 /* adobe_exp_batch_statusTests.swift */; };
 		DBC36C0D23E36179000ED738 /* adobe_exp_batch_statusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C0C23E36179000ED738 /* adobe_exp_batch_statusUITests.swift */; };
+		DBC36C1C23E36869000ED738 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C1B23E36869000ED738 /* AuthInfo.swift */; };
+		DBC36C1D23E36869000ED738 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C1B23E36869000ED738 /* AuthInfo.swift */; };
+		DBC36C1F23E36893000ED738 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C1E23E36893000ED738 /* AuthToken.swift */; };
+		DBC36C2023E36893000ED738 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C1E23E36893000ED738 /* AuthToken.swift */; };
+		DBC36C2323E36B3E000ED738 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2223E36B3E000ED738 /* LoginViewController.swift */; };
+		DBC36C2423E36B3E000ED738 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2223E36B3E000ED738 /* LoginViewController.swift */; };
+		DBC36C2923E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */; };
+		DBC36C2A23E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */; };
+		DBC36C2C23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */; };
+		DBC36C2D23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */; };
+		DBC36C2F23E3725C000ED738 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2E23E3725C000ED738 /* LoginPresenter.swift */; };
+		DBC36C3023E3725C000ED738 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C2E23E3725C000ED738 /* LoginPresenter.swift */; };
+		DBC36C3323E37496000ED738 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3223E37496000ED738 /* LoginModel.swift */; };
+		DBC36C3423E37496000ED738 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3223E37496000ED738 /* LoginModel.swift */; };
+		DBC36C3623E374EE000ED738 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3523E374EE000ED738 /* Constants.swift */; };
+		DBC36C3723E374EE000ED738 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3523E374EE000ED738 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,15 @@
 		DBC36C0823E36179000ED738 /* adobe-exp-batch-statusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "adobe-exp-batch-statusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC36C0C23E36179000ED738 /* adobe_exp_batch_statusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adobe_exp_batch_statusUITests.swift; sourceTree = "<group>"; };
 		DBC36C0E23E36179000ED738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC36C1B23E36869000ED738 /* AuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
+		DBC36C1E23E36893000ED738 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		DBC36C2223E36B3E000ED738 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
+		DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
+		DBC36C2E23E3725C000ED738 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		DBC36C3223E37496000ED738 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		DBC36C3523E374EE000ED738 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBC36C3823E377A3000ED738 /* adobe-exp-batch-status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "adobe-exp-batch-status.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +124,12 @@
 		DBC36BE923E36178000ED738 /* adobe-exp-batch-status */ = {
 			isa = PBXGroup;
 			children = (
+				DBC36C3823E377A3000ED738 /* adobe-exp-batch-status.entitlements */,
+				DBC36C3123E37487000ED738 /* Models */,
+				DBC36C2723E3713B000ED738 /* Protocols */,
+				DBC36C2623E3712F000ED738 /* Presenters */,
+				DBC36C2123E36B1B000ED738 /* ViewControllers */,
+				DBC36C1A23E36820000ED738 /* Objects */,
 				DBC36BEA23E36178000ED738 /* AppDelegate.swift */,
 				DBC36BEC23E36178000ED738 /* SceneDelegate.swift */,
 				DBC36BEE23E36178000ED738 /* ViewController.swift */,
@@ -106,6 +137,7 @@
 				DBC36BF323E36179000ED738 /* Assets.xcassets */,
 				DBC36BF523E36179000ED738 /* LaunchScreen.storyboard */,
 				DBC36BF823E36179000ED738 /* Info.plist */,
+				DBC36C3523E374EE000ED738 /* Constants.swift */,
 			);
 			path = "adobe-exp-batch-status";
 			sourceTree = "<group>";
@@ -126,6 +158,48 @@
 				DBC36C0E23E36179000ED738 /* Info.plist */,
 			);
 			path = "adobe-exp-batch-statusUITests";
+			sourceTree = "<group>";
+		};
+		DBC36C1A23E36820000ED738 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C1B23E36869000ED738 /* AuthInfo.swift */,
+				DBC36C1E23E36893000ED738 /* AuthToken.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		DBC36C2123E36B1B000ED738 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C2223E36B3E000ED738 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBC36C2623E3712F000ED738 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C2E23E3725C000ED738 /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		DBC36C2723E3713B000ED738 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */,
+				DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DBC36C3123E37487000ED738 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C3223E37496000ED738 /* LoginModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC36C2323E36B3E000ED738 /* LoginViewController.swift in Sources */,
+				DBC36C3623E374EE000ED738 /* Constants.swift in Sources */,
+				DBC36C2923E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */,
+				DBC36C2C23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */,
+				DBC36C2F23E3725C000ED738 /* LoginPresenter.swift in Sources */,
 				DBC36BEF23E36178000ED738 /* ViewController.swift in Sources */,
+				DBC36C3323E37496000ED738 /* LoginModel.swift in Sources */,
 				DBC36BEB23E36178000ED738 /* AppDelegate.swift in Sources */,
 				DBC36BED23E36178000ED738 /* SceneDelegate.swift in Sources */,
+				DBC36C1F23E36893000ED738 /* AuthToken.swift in Sources */,
+				DBC36C1C23E36869000ED738 /* AuthInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC36C2D23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */,
+				DBC36C2423E36B3E000ED738 /* LoginViewController.swift in Sources */,
+				DBC36C3023E3725C000ED738 /* LoginPresenter.swift in Sources */,
+				DBC36C2A23E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */,
 				DBC36C0223E36179000ED738 /* adobe_exp_batch_statusTests.swift in Sources */,
+				DBC36C3423E37496000ED738 /* LoginModel.swift in Sources */,
+				DBC36C1D23E36869000ED738 /* AuthInfo.swift in Sources */,
+				DBC36C2023E36893000ED738 /* AuthToken.swift in Sources */,
+				DBC36C3723E374EE000ED738 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "adobe-exp-batch-status/adobe-exp-batch-status.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 422Y4K9N6G;
 				INFOPLIST_FILE = "adobe-exp-batch-status/Info.plist";
@@ -452,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "adobe-exp-batch-status/adobe-exp-batch-status.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 422Y4K9N6G;
 				INFOPLIST_FILE = "adobe-exp-batch-status/Info.plist";
