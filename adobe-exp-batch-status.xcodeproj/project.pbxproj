@@ -31,6 +31,8 @@
 		DBC36C3423E37496000ED738 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3223E37496000ED738 /* LoginModel.swift */; };
 		DBC36C3623E374EE000ED738 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3523E374EE000ED738 /* Constants.swift */; };
 		DBC36C3723E374EE000ED738 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3523E374EE000ED738 /* Constants.swift */; };
+		DBC36C3B23E379FA000ED738 /* LoginModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */; };
+		DBC36C3C23E379FA000ED738 /* LoginModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 		DBC36C3223E37496000ED738 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		DBC36C3523E374EE000ED738 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DBC36C3823E377A3000ED738 /* adobe-exp-batch-status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "adobe-exp-batch-status.entitlements"; sourceTree = "<group>"; };
+		DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,7 @@
 			children = (
 				DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */,
 				DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */,
+				DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -340,6 +344,7 @@
 				DBC36C2F23E3725C000ED738 /* LoginPresenter.swift in Sources */,
 				DBC36BEF23E36178000ED738 /* ViewController.swift in Sources */,
 				DBC36C3323E37496000ED738 /* LoginModel.swift in Sources */,
+				DBC36C3B23E379FA000ED738 /* LoginModelProtocol.swift in Sources */,
 				DBC36BEB23E36178000ED738 /* AppDelegate.swift in Sources */,
 				DBC36BED23E36178000ED738 /* SceneDelegate.swift in Sources */,
 				DBC36C1F23E36893000ED738 /* AuthToken.swift in Sources */,
@@ -354,6 +359,7 @@
 				DBC36C2D23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */,
 				DBC36C2423E36B3E000ED738 /* LoginViewController.swift in Sources */,
 				DBC36C3023E3725C000ED738 /* LoginPresenter.swift in Sources */,
+				DBC36C3C23E379FA000ED738 /* LoginModelProtocol.swift in Sources */,
 				DBC36C2A23E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */,
 				DBC36C0223E36179000ED738 /* adobe_exp_batch_statusTests.swift in Sources */,
 				DBC36C3423E37496000ED738 /* LoginModel.swift in Sources */,

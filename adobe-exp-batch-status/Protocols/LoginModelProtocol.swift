@@ -1,5 +1,5 @@
 //
-//  LoginProtocols.swift
+//  LoginModelProtocol.swift
 //  adobe-exp-batch-status
 //
 //  Created by Adam Ure on 1/30/20.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-protocol LoginPresenterProtocol {
+protocol LoginModelProtocol {
     func login(clientSecret: String, clientId: String, organizationID: String, technicalAccountID: String)
-    func loginFailed()
-    func loginSuccessful()
 }

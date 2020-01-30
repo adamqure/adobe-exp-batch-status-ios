@@ -49,6 +49,19 @@ class LoginViewController: UIViewController {
                 throw Constants.LoginDataError.invalidTechnicalAccountID
             }
             
+            if (clientID.isEmpty) {
+                throw Constants.LoginDataError.invalidClientID
+            }
+            if (clientSecret.isEmpty) {
+                throw Constants.LoginDataError.invalidClientSecret
+            }
+            if (orgID.isEmpty) {
+                throw Constants.LoginDataError.invalidOrganizationID
+            }
+            if (accountId.isEmpty) {
+                throw Constants.LoginDataError.invalidTechnicalAccountID
+            }
+            
             //Send the data logic to the presenter
             if (mPresenter != nil) {
                 mPresenter?.login(clientSecret: clientSecret, clientId: clientID, organizationID: orgID, technicalAccountID: accountId)
@@ -91,13 +104,17 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewControllerProtocol {
     
+    func loginFailed() {
+        <#code#>
+    }
+    
+    
     /**
         Triggers the segue to the dataset controller
      */
     func loginSuccessful() {
         
     }
-    
     
     /**
         Displays an error message to the user
