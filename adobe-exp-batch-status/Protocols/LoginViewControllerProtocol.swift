@@ -11,4 +11,5 @@ import Foundation
 protocol LoginViewControllerProtocol {
     func showError(message: String)
     func loginSuccessful()
+    func loginFailed()
 }
