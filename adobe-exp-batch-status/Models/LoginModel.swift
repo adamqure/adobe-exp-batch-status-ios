@@ -8,6 +8,15 @@
 
 import Foundation
 
-class LoginModel {
+class LoginModel: LoginModelProtocol {
     
+    var callback: LoginPresenterProtocol?
+    
+    init(presenterCallback: LoginPresenterProtocol) {
+        self.callback = presenterCallback
+    }
+
+    func login(clientSecret: String, clientId: String, organizationID: String, technicalAccountID: String) {
+        //Call the login method
+    }
 }
