@@ -103,17 +103,19 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginViewControllerProtocol {
-    
-    func loginFailed() {
-        <#code#>
-    }
-    
-    
+  
     /**
         Triggers the segue to the dataset controller
      */
     func loginSuccessful() {
         
+    }
+    
+    /**
+        Stops the loading indicator and shows the user a failed message
+     */
+    func loginFailed() {
+          <#code#>
     }
     
     /**
