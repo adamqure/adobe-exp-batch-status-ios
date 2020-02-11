@@ -1,0 +1,6 @@
+framework module Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests {
+  umbrella header "Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

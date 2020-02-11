@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CFB42323F365F60070B1B5 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CFB42223F365F60070B1B5 /* config.json */; };
+		33EDB91DA081883AC0D452AB /* Pods_adobe_exp_batch_status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E6B97D3B56657B57D4617 /* Pods_adobe_exp_batch_status.framework */; };
+		47D1534C59FD2E378ACCFD72 /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A774EB31D9D2D0925C5A4B /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework */; };
+		8E93A3D51B8F4D5C1F7901D0 /* Pods_adobe_exp_batch_statusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A80B0CC944380C2914582C /* Pods_adobe_exp_batch_statusTests.framework */; };
 		DBC36BEB23E36178000ED738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEA23E36178000ED738 /* AppDelegate.swift */; };
 		DBC36BED23E36178000ED738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEC23E36178000ED738 /* SceneDelegate.swift */; };
 		DBC36BEF23E36178000ED738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEE23E36178000ED738 /* ViewController.swift */; };
@@ -53,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CFB42223F365F60070B1B5 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		1EA6CD9BDD6169C1E7CAE005 /* Pods-adobe-exp-batch-statusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-statusTests.release.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-statusTests/Pods-adobe-exp-batch-statusTests.release.xcconfig"; sourceTree = "<group>"; };
+		32A80B0CC944380C2914582C /* Pods_adobe_exp_batch_statusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adobe_exp_batch_statusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4765DB3450EC04E708ADB1FE /* Pods-adobe-exp-batch-statusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-statusTests.debug.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-statusTests/Pods-adobe-exp-batch-statusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50A774EB31D9D2D0925C5A4B /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEE678966AC7563E0C98B16 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.debug.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72F14B182EDF5F381A5477F9 /* Pods-adobe-exp-batch-status.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-status.release.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-status/Pods-adobe-exp-batch-status.release.xcconfig"; sourceTree = "<group>"; };
+		7C1E6B97D3B56657B57D4617 /* Pods_adobe_exp_batch_status.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adobe_exp_batch_status.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E90773FB86CB46FE54A37D /* Pods-adobe-exp-batch-status.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-status.debug.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-status/Pods-adobe-exp-batch-status.debug.xcconfig"; sourceTree = "<group>"; };
 		DBC36BE723E36178000ED738 /* adobe-exp-batch-status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adobe-exp-batch-status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC36BEA23E36178000ED738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC36BEC23E36178000ED738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +90,7 @@
 		DBC36C3523E374EE000ED738 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DBC36C3823E377A3000ED738 /* adobe-exp-batch-status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "adobe-exp-batch-status.entitlements"; sourceTree = "<group>"; };
 		DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelProtocol.swift; sourceTree = "<group>"; };
+		DE58971EC057A9EB4627AA28 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.release.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EDB91DA081883AC0D452AB /* Pods_adobe_exp_batch_status.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E93A3D51B8F4D5C1F7901D0 /* Pods_adobe_exp_batch_statusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +114,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D1534C59FD2E378ACCFD72 /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F76E90FE15D7C8732D6BA66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E90773FB86CB46FE54A37D /* Pods-adobe-exp-batch-status.debug.xcconfig */,
+				72F14B182EDF5F381A5477F9 /* Pods-adobe-exp-batch-status.release.xcconfig */,
+				6DEE678966AC7563E0C98B16 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.debug.xcconfig */,
+				DE58971EC057A9EB4627AA28 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.release.xcconfig */,
+				4765DB3450EC04E708ADB1FE /* Pods-adobe-exp-batch-statusTests.debug.xcconfig */,
+				1EA6CD9BDD6169C1E7CAE005 /* Pods-adobe-exp-batch-statusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F6C6647D39BD8800035AEB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E6B97D3B56657B57D4617 /* Pods_adobe_exp_batch_status.framework */,
+				50A774EB31D9D2D0925C5A4B /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework */,
+				32A80B0CC944380C2914582C /* Pods_adobe_exp_batch_statusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBC36BDE23E36178000ED738 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +151,8 @@
 				DBC36C0023E36179000ED738 /* adobe-exp-batch-statusTests */,
 				DBC36C0B23E36179000ED738 /* adobe-exp-batch-statusUITests */,
 				DBC36BE823E36178000ED738 /* Products */,
+				6F76E90FE15D7C8732D6BA66 /* Pods */,
+				8F6C6647D39BD8800035AEB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +183,7 @@
 				DBC36BF523E36179000ED738 /* LaunchScreen.storyboard */,
 				DBC36BF823E36179000ED738 /* Info.plist */,
 				DBC36C3523E374EE000ED738 /* Constants.swift */,
+				04CFB42223F365F60070B1B5 /* config.json */,
 			);
 			path = "adobe-exp-batch-status";
 			sourceTree = "<group>";
@@ -213,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC36C1123E36179000ED738 /* Build configuration list for PBXNativeTarget "adobe-exp-batch-status" */;
 			buildPhases = (
+				051D995C99F4B2B5237436E5 /* [CP] Check Pods Manifest.lock */,
 				DBC36BE323E36178000ED738 /* Sources */,
 				DBC36BE423E36178000ED738 /* Frameworks */,
 				DBC36BE523E36178000ED738 /* Resources */,
+				8EECBE702DEA20C25EBF81F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC36C1423E36179000ED738 /* Build configuration list for PBXNativeTarget "adobe-exp-batch-statusTests" */;
 			buildPhases = (
+				79CBBD55BA485081293F2D57 /* [CP] Check Pods Manifest.lock */,
 				DBC36BF923E36179000ED738 /* Sources */,
 				DBC36BFA23E36179000ED738 /* Frameworks */,
 				DBC36BFB23E36179000ED738 /* Resources */,
@@ -248,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC36C1723E36179000ED738 /* Build configuration list for PBXNativeTarget "adobe-exp-batch-statusUITests" */;
 			buildPhases = (
+				679086273B5708C58847A532 /* [CP] Check Pods Manifest.lock */,
 				DBC36C0423E36179000ED738 /* Sources */,
 				DBC36C0523E36179000ED738 /* Frameworks */,
 				DBC36C0623E36179000ED738 /* Resources */,
+				D7878E558B15F272873D410A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC36BF723E36179000ED738 /* LaunchScreen.storyboard in Resources */,
+				04CFB42323F365F60070B1B5 /* config.json in Resources */,
 				DBC36BF423E36179000ED738 /* Assets.xcassets in Resources */,
 				DBC36BF223E36178000ED738 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +380,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051D995C99F4B2B5237436E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adobe-exp-batch-status-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679086273B5708C58847A532 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79CBBD55BA485081293F2D57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adobe-exp-batch-statusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EECBE702DEA20C25EBF81F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status/Pods-adobe-exp-batch-status-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status/Pods-adobe-exp-batch-status-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status/Pods-adobe-exp-batch-status-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7878E558B15F272873D410A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBC36BE323E36178000ED738 /* Sources */ = {
@@ -528,6 +680,7 @@
 		};
 		DBC36C1223E36179000ED738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E90773FB86CB46FE54A37D /* Pods-adobe-exp-batch-status.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "adobe-exp-batch-status/adobe-exp-batch-status.entitlements";
@@ -547,6 +700,7 @@
 		};
 		DBC36C1323E36179000ED738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F14B182EDF5F381A5477F9 /* Pods-adobe-exp-batch-status.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "adobe-exp-batch-status/adobe-exp-batch-status.entitlements";
@@ -566,6 +720,7 @@
 		};
 		DBC36C1523E36179000ED738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4765DB3450EC04E708ADB1FE /* Pods-adobe-exp-batch-statusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +743,7 @@
 		};
 		DBC36C1623E36179000ED738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA6CD9BDD6169C1E7CAE005 /* Pods-adobe-exp-batch-statusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +766,7 @@
 		};
 		DBC36C1823E36179000ED738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEE678966AC7563E0C98B16 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,6 +787,7 @@
 		};
 		DBC36C1923E36179000ED738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE58971EC057A9EB4627AA28 /* Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

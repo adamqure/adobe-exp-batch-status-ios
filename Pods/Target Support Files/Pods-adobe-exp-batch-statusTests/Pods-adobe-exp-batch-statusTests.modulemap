@@ -1,0 +1,6 @@
+framework module Pods_adobe_exp_batch_statusTests {
+  umbrella header "Pods-adobe-exp-batch-statusTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
