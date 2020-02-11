@@ -14,6 +14,7 @@ import SwiftyJSON
 class LoginModel: LoginModelProtocol {
     
     var callback: LoginPresenterProtocol?
+
     let metascope = "https://ims-na1.adobelogin.com/s/ent_dataservices_sdk"
     let aud = "https://ims-na1.adobelogin.com/c/"
     var api_key = ""
