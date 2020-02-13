@@ -115,7 +115,7 @@ extension LoginViewController: LoginViewControllerProtocol {
         Stops the loading indicator and shows the user a failed message
      */
     func loginFailed() {
-          <#code#>
+          
     }
     
     /**
