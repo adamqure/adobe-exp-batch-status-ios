@@ -13,10 +13,8 @@ import SwiftyJSON
 
 class LoginModel: LoginModelProtocol {
     
+    let constants = Constants()
     var callback: LoginPresenterProtocol?
-
-    let metascope = "https://ims-na1.adobelogin.com/s/ent_dataservices_sdk"
-    let aud = "https://ims-na1.adobelogin.com/c/"
     var api_key = ""
     var secret = ""
     
@@ -57,15 +55,21 @@ class LoginModel: LoginModelProtocol {
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
             if (error != nil) {
                 print(error!)
+                self.callback?.loginFailed()
             } else {
                 let httpResponse = response as? HTTPURLResponse
                 print(httpResponse!)
-
+                if httpResponse?.statusCode == 400 {
+                    self.callback?.loginFailed()
+                    return
+                }
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     print(json)
+                    self.callback?.loginSuccessful()
                 } catch {
                     print(error)
+                    self.callback?.loginFailed()
                 }
 
             }

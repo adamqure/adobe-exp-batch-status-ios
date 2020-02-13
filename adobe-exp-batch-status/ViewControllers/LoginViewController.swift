@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var organizationIDTextField: UITextField!
     @IBOutlet weak var technicalAccountIDTextField: UITextField!
     
+    let constants = Constants()
     var mPresenter: LoginPresenterProtocol?
     
     override func viewDidLoad() {
@@ -86,6 +87,10 @@ class LoginViewController: UIViewController {
      */
     @IBAction func adobeWebsiteButtonPressed(_ sender: UIButton) {
         //Open the adobe url in safari
+
+        if let link = URL(string: self.constants.adobeURL) {
+          UIApplication.shared.open(link)
+        }
     }
     
     
@@ -108,14 +113,18 @@ extension LoginViewController: LoginViewControllerProtocol {
         Triggers the segue to the dataset controller
      */
     func loginSuccessful() {
-        
+        let alert = UIAlertController(title: "Success", message: "You've Completed the Demo", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     /**
         Stops the loading indicator and shows the user a failed message
      */
     func loginFailed() {
-          
+        let alert = UIAlertController(title: "Something Went Wrong", message: "We couldn't authenticate with Adobe", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     /**
