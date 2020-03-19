@@ -9,5 +9,6 @@
 import Foundation
 
 protocol BatchesPresenterProtocol {
-    
+    func retrieveBatches(dataset: String)
+    func updateBatches(batches: [Batch])
 }

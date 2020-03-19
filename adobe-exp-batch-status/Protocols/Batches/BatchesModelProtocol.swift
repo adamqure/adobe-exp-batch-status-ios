@@ -8,6 +8,6 @@
 
 import Foundation
 
-class BatchesModelProtocol {
-    
+protocol BatchesModelProtocol {
+    func retrieveBatches(datasetId: String)
 }

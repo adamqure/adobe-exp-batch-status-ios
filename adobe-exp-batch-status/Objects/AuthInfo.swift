@@ -11,6 +11,7 @@ import Foundation
 /**
     The AuthInfo Class manages the data necessary to login to the Adobe Experience Platform
  */
+var authInfo = AuthInfo(apiKey: "", clientSecret: "", imsOrg: "", sub: "", clientID: "")
 class AuthInfo {
     //The API Key is the key associated with our development account
     //This key should be retrieved from some config file

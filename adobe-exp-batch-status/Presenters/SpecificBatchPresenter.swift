@@ -8,6 +8,26 @@
 
 import Foundation
 
-class SpecificBatchPresenter {
+class SpecificBatchPresenter: SpecificBranchPresenterProtocol {
+    
+    var viewCallback: SpecificBranchViewControllerProtocol
+    var model: SpecificBranchModelProtocol?
+    
+    init(callback: SpecificBranchViewControllerProtocol) {
+        self.viewCallback = callback
+        self.model = SpecificBatchModel(presenter: self)
+    }
+    
+    func retrieveBatchData(id: String) {
+        if (model == nil) {
+            self.model = SpecificBatchModel(presenter: self)
+        }
+        model?.retrieveBatchData(id: id)
+    }
+    
+    func updateBatchData(batch: BatchDetails?) {
+        viewCallback.updateData(batch: batch)
+    }
+    
     
 }

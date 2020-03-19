@@ -9,5 +9,6 @@
 import Foundation
 
 protocol SpecificBranchPresenterProtocol {
-    
+    func retrieveBatchData(id: String)
+    func updateBatchData(batch: BatchDetails?)
 }

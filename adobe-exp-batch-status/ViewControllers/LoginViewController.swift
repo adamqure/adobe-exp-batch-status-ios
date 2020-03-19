@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 /**
  ViewController for the Login functionality of the app
@@ -29,6 +30,27 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.mPresenter = LoginPresenter(callback: self)
+        self.loadDataFromKeychain()
+    }
+    
+    func loadDataFromKeychain() {
+        let keychain = Keychain(service: "com.example.adobe-exp-batch-status-keychain")
+        guard let clientId = keychain["client_id"] else {
+            return
+        }
+        guard let clientSecret = keychain["client_secret"] else {
+            return
+        }
+        guard let orgId = keychain["org_id"] else {
+            return
+        }
+        guard let sub = keychain["sub"] else {
+            return
+        }
+        self.clientIdTextField.text = clientId
+        self.clientSecretTextField.text = clientSecret
+        self.organizationIDTextField.text = orgId
+        self.technicalAccountIDTextField.text = sub
     }
     
     /**
@@ -113,9 +135,7 @@ extension LoginViewController: LoginViewControllerProtocol {
         Triggers the segue to the dataset controller
      */
     func loginSuccessful() {
-        let alert = UIAlertController(title: "Success", message: "You've Completed the Demo", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "loginSuccessfulSegue", sender: nil)
     }
     
     /**

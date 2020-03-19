@@ -8,6 +8,24 @@
 
 import Foundation
 
-class BatchesPresenter {
+class BatchesPresenter: BatchesPresenterProtocol {
+
+    var viewCallback: BatchesViewControllerProtocol?
+    var model: BatchesModelProtocol?
+
+    init(callback: BatchesViewControllerProtocol) {
+        self.viewCallback = callback
+        self.model = BatchesModel(callback: self)
+    }
     
+    func retrieveBatches(dataset: String) {
+        if (model == nil) {
+            model = BatchesModel(callback: self)
+        }
+        model?.retrieveBatches(datasetId: dataset)
+    }
+    
+    func updateBatches(batches: [Batch]) {
+        self.viewCallback?.updateBatches(batches: batches)
+    }
 }

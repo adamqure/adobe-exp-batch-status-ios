@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BatchesViewControllerProtocol {
-    
+    func updateBatches(batches: [Batch])
 }

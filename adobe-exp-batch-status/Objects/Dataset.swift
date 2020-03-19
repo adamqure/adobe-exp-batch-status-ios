@@ -1,5 +1,5 @@
 //
-//  DatasetsModelProtocol.swift
+//  Dataset.swift
 //  adobe-exp-batch-status
 //
 //  Created by Adam Ure on 2/25/20.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol DatasetsModelProtocol {
-    func retrieveDatasets()
+struct Dataset: Codable {
+    let name: String
+    let id: String
+    let state: String
 }

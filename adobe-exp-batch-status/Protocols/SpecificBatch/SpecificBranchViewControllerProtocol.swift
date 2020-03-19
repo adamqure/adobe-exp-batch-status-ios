@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SpecificBranchViewControllerProtocol {
-    
+    func updateData(batch: BatchDetails?)
 }

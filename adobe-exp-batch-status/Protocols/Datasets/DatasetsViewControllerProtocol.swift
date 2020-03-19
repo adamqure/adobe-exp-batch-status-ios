@@ -9,5 +9,7 @@
 import Foundation
 
 protocol DatasetsViewControllerProtocol {
-    
+    func datasetSelected(index: Int)
+    func searchSelected()
+    func updateDatasets(datasets: [Dataset])
 }

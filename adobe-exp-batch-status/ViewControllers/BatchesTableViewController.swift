@@ -9,82 +9,112 @@
 import UIKit
 
 class BatchesTableViewController: UITableViewController {
+    
+    var datasetId: String = ""
+    var datasetName: String = ""
+    var presenter: BatchesPresenterProtocol?
+    var batchesList = [Batch]()
+    var filteredBatchesList = [Batch]()
+    var selectedIndex = 0
+    
+    @IBOutlet weak var batchesSearchBar: UISearchBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.title = datasetName
+        self.presenter = BatchesPresenter(callback: self)
+        self.presenter?.retrieveBatches(dataset: self.datasetId)
+        self.batchesSearchBar.delegate = self
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.row
+        self.performSegue(withIdentifier: "batchSelected", sender: nil)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.filteredBatchesList.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "batchTableCell", for: indexPath) as! BatchesTableViewCell
+        let batch = filteredBatchesList[indexPath.row]
+        cell.batchIdLabel.text = batch.id
+        let status = Batch.stringToBatchStatus(statusString: batch.status)
+        switch(status) {
+            case .success:
+                cell.statusLabel.text = "Success"
+                cell.statusColorView.backgroundColor = UIColor.green
+                break
+            case .failure:
+                cell.statusLabel.text = "Failed"
+                cell.statusColorView.backgroundColor = UIColor.red
+                break
+            case .processing:
+                cell.statusLabel.text = "Processing"
+                cell.statusColorView.backgroundColor = UIColor.yellow
+                break
+            case .givenUp:
+                cell.statusLabel.text = "Aborted"
+                cell.statusColorView.backgroundColor = UIColor.gray
+                break
+        }
+        
+        let date = Date(milliseconds: batch.lastUpdated)
+        let currentDate = Date()
+        
+        cell.lastModifiedLabel.text = currentDate.offsetFrom(date: date)
+        
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+         switch(segue.identifier) {
+                   case "batchSelected":
+                       let destination = segue.destination as? BatchViewController
+                       if (destination != nil) {
+                        destination?.batchId = self.filteredBatchesList[self.selectedIndex].id
+                       }
+                       break
+                   default:
+                       break
+               }
     }
-    */
 
+}
+
+extension BatchesTableViewController: BatchesViewControllerProtocol {
+    func updateBatches(batches: [Batch]) {
+        DispatchQueue.main.async {
+            self.batchesList = batches
+            self.filteredBatchesList = batches
+            self.tableView.reloadData()
+        }
+    }
+}
+
+extension BatchesTableViewController : UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let searchString = searchBar.text else {
+            return
+        }
+        
+        if (searchString == "") {
+            self.filteredBatchesList = self.batchesList
+        } else {
+            self.filteredBatchesList = self.batchesList.filter {
+                $0.id.lowercased().contains(searchString.lowercased())
+            }
+        }
+        self.tableView.reloadData()
+    }
 }

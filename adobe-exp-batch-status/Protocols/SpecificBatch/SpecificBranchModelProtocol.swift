@@ -9,5 +9,7 @@
 import Foundation
 
 protocol SpecificBranchModelProtocol {
-    
+    func retrieveBatchData(id: String)
+    func beginPolling(id: String)
+    func cancelPolling(id: String)
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 protocol DatasetsPresenterProtocol {
-    
+    func retrieveDatasets()
+    func updateDatasets(datasets: [Dataset])
 }
