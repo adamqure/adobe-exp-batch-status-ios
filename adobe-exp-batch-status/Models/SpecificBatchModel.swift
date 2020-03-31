@@ -11,8 +11,10 @@ import Foundation
 class SpecificBatchModel: SpecificBranchModelProtocol {
     var presenterCallback: SpecificBranchPresenterProtocol
     var isPolling = false
-    var pollingFrequency = 1
+    var pollingFrequency: TimeInterval = 5
     var pollingid = ""
+    var pollingTimer: Timer?
+    let pollingMax: TimeInterval = 300
     
     init(presenter: SpecificBranchPresenterProtocol) {
         self.presenterCallback = presenter
@@ -48,7 +50,25 @@ class SpecificBatchModel: SpecificBranchModelProtocol {
                                 errorArray.append(batchError)
                             }
                         }
-                        batch = BatchDetails(startedTime: dictionary.value(forKey: "started") as? Int, endedTime: dictionary.value(forKey: "completed") as? Int, status: dictionary.value(forKey: "status") as! String, successfulCount: dictionary.value(forKey: "recordCount") as? Int, failedCount: dictionary.value(forKey: "failedRecordCount") as? Int, errors: errorArray)
+                        
+                        let metrics = dictionary.value(forKey: "metrics") as! NSDictionary
+                        let status = dictionary.value(forKey: "status") as! String
+                        
+                        if (self.isProcessing(status: status)) {
+                            if (self.pollingFrequency < self.pollingMax) {
+                                self.pollingFrequency += 5
+                            }
+                            if (!self.isPolling) {
+                                self.isPolling = true
+                                self.beginPolling(id: id)
+                            }
+                        } else {
+                            self.isPolling = false
+                            self.cancelPolling(id: id)
+                        }
+                        
+                        batch = BatchDetails(startedTime: dictionary.value(forKey: "started") as? Int, endedTime: dictionary.value(forKey: "completed") as? Int, status: status, successfulCount: metrics.value(forKey: "outputRecordCount") as? Int, failedCount: (metrics.value(forKey: "inputRecordCount") as? Int ?? 0) - (metrics.value(forKey: "outputRecordCount") as? Int ?? 0), errors: errorArray)
+                        
                     }
                     
                     self.presenterCallback.updateBatchData(batch: batch)
@@ -61,15 +81,32 @@ class SpecificBatchModel: SpecificBranchModelProtocol {
         task.resume()
     }
     
+    func isProcessing(status: String) -> Bool {
+        let batchStatus: Batch.BatchStatus = Batch.stringToBatchStatus(statusString: status)
+        switch batchStatus {
+            case .processing:
+                return true
+            default:
+                return false
+        }
+    }
+    
     func beginPolling(id: String) {
         //Start the polling
+        self.pollingid = id
+        self.pollingTimer = Timer.scheduledTimer(timeInterval: pollingFrequency, target: self, selector: #selector(poll), userInfo: nil, repeats: true)
+    }
+    
+    @objc func poll() {
+        self.retrieveBatchData(id: self.pollingid)
     }
     
     func cancelPolling(id: String) {
         //End the polling
+        self.pollingTimer?.invalidate()
     }
     
     deinit {
-//        cancelPolling(id: <#T##String#>)
+        cancelPolling(id: self.pollingid)
     }
 }
