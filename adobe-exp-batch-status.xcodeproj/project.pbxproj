@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045BB1C02405DBC500D74F36 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BB1BF2405DBC500D74F36 /* Dataset.swift */; };
+		0481970B2418317B00B5E2E0 /* Batch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481970A2418317B00B5E2E0 /* Batch.swift */; };
+		0481970D24183DA000B5E2E0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481970C24183DA000B5E2E0 /* DateExtension.swift */; };
+		0481970F241844FF00B5E2E0 /* BatchDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481970E241844FF00B5E2E0 /* BatchDetails.swift */; };
+		04C71ABE2405BC76005C6B5C /* DatasetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ABD2405BC76005C6B5C /* DatasetsTableViewCell.swift */; };
+		04C71AC02405BFAA005C6B5C /* BatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ABF2405BFAA005C6B5C /* BatchesTableViewCell.swift */; };
+		04C71AC22405C4D1005C6B5C /* DatasetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AC12405C4D1005C6B5C /* DatasetsTableViewController.swift */; };
+		04C71AC42405C4DF005C6B5C /* BatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AC32405C4DF005C6B5C /* BatchesTableViewController.swift */; };
+		04C71AC62405C4FE005C6B5C /* BatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AC52405C4FE005C6B5C /* BatchViewController.swift */; };
+		04C71AC82405C5AB005C6B5C /* DatasetsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AC72405C5AB005C6B5C /* DatasetsPresenter.swift */; };
+		04C71ACA2405C5BD005C6B5C /* BatchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AC92405C5BD005C6B5C /* BatchesPresenter.swift */; };
+		04C71ACC2405C5CD005C6B5C /* SpecificBatchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ACB2405C5CD005C6B5C /* SpecificBatchPresenter.swift */; };
+		04C71ACE2405C5E1005C6B5C /* DatasetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ACD2405C5E1005C6B5C /* DatasetsModel.swift */; };
+		04C71AD02405C5F2005C6B5C /* BatchesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ACF2405C5F2005C6B5C /* BatchesModel.swift */; };
+		04C71AD22405C606005C6B5C /* SpecificBatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AD12405C606005C6B5C /* SpecificBatchModel.swift */; };
+		04C71AD82405C646005C6B5C /* BatchesViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AD72405C646005C6B5C /* BatchesViewControllerProtocol.swift */; };
+		04C71ADA2405C65B005C6B5C /* BatchesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AD92405C65B005C6B5C /* BatchesPresenterProtocol.swift */; };
+		04C71ADC2405C67C005C6B5C /* BatchesModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ADB2405C67C005C6B5C /* BatchesModelProtocol.swift */; };
+		04C71ADE2405C696005C6B5C /* DatasetsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ADD2405C696005C6B5C /* DatasetsViewControllerProtocol.swift */; };
+		04C71AE02405C6A9005C6B5C /* DatasetsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71ADF2405C6A9005C6B5C /* DatasetsPresenterProtocol.swift */; };
+		04C71AE22405C6BC005C6B5C /* DatasetsModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AE12405C6BC005C6B5C /* DatasetsModelProtocol.swift */; };
+		04C71AE42405C6E4005C6B5C /* SpecificBranchViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AE32405C6E4005C6B5C /* SpecificBranchViewControllerProtocol.swift */; };
+		04C71AE62405C6FE005C6B5C /* SpecificBranchPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AE52405C6FE005C6B5C /* SpecificBranchPresenterProtocol.swift */; };
+		04C71AE82405C718005C6B5C /* SpecificBranchModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C71AE72405C718005C6B5C /* SpecificBranchModelProtocol.swift */; };
 		04CFB42323F365F60070B1B5 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CFB42223F365F60070B1B5 /* config.json */; };
+		04E9FBC42423DA3E000FBF95 /* BatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9FBC32423DA3E000FBF95 /* BatchError.swift */; };
+		04E9FBC62423EA63000FBF95 /* ErrorDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9FBC52423EA63000FBF95 /* ErrorDetailsTableViewCell.swift */; };
 		33EDB91DA081883AC0D452AB /* Pods_adobe_exp_batch_status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E6B97D3B56657B57D4617 /* Pods_adobe_exp_batch_status.framework */; };
 		47D1534C59FD2E378ACCFD72 /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A774EB31D9D2D0925C5A4B /* Pods_adobe_exp_batch_status_adobe_exp_batch_statusUITests.framework */; };
 		8E93A3D51B8F4D5C1F7901D0 /* Pods_adobe_exp_batch_statusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A80B0CC944380C2914582C /* Pods_adobe_exp_batch_statusTests.framework */; };
 		DBC36BEB23E36178000ED738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEA23E36178000ED738 /* AppDelegate.swift */; };
 		DBC36BED23E36178000ED738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEC23E36178000ED738 /* SceneDelegate.swift */; };
-		DBC36BEF23E36178000ED738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC36BEE23E36178000ED738 /* ViewController.swift */; };
 		DBC36BF223E36178000ED738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC36BF023E36178000ED738 /* Main.storyboard */; };
 		DBC36BF423E36179000ED738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC36BF323E36179000ED738 /* Assets.xcassets */; };
 		DBC36BF723E36179000ED738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC36BF523E36179000ED738 /* LaunchScreen.storyboard */; };
@@ -57,7 +82,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045BB1BF2405DBC500D74F36 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		0481970A2418317B00B5E2E0 /* Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batch.swift; sourceTree = "<group>"; };
+		0481970C24183DA000B5E2E0 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		0481970E241844FF00B5E2E0 /* BatchDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchDetails.swift; sourceTree = "<group>"; };
+		04C71ABD2405BC76005C6B5C /* DatasetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsTableViewCell.swift; sourceTree = "<group>"; };
+		04C71ABF2405BFAA005C6B5C /* BatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesTableViewCell.swift; sourceTree = "<group>"; };
+		04C71AC12405C4D1005C6B5C /* DatasetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsTableViewController.swift; sourceTree = "<group>"; };
+		04C71AC32405C4DF005C6B5C /* BatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesTableViewController.swift; sourceTree = "<group>"; };
+		04C71AC52405C4FE005C6B5C /* BatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchViewController.swift; sourceTree = "<group>"; };
+		04C71AC72405C5AB005C6B5C /* DatasetsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsPresenter.swift; sourceTree = "<group>"; };
+		04C71AC92405C5BD005C6B5C /* BatchesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesPresenter.swift; sourceTree = "<group>"; };
+		04C71ACB2405C5CD005C6B5C /* SpecificBatchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBatchPresenter.swift; sourceTree = "<group>"; };
+		04C71ACD2405C5E1005C6B5C /* DatasetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsModel.swift; sourceTree = "<group>"; };
+		04C71ACF2405C5F2005C6B5C /* BatchesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesModel.swift; sourceTree = "<group>"; };
+		04C71AD12405C606005C6B5C /* SpecificBatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBatchModel.swift; sourceTree = "<group>"; };
+		04C71AD72405C646005C6B5C /* BatchesViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04C71AD92405C65B005C6B5C /* BatchesPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesPresenterProtocol.swift; sourceTree = "<group>"; };
+		04C71ADB2405C67C005C6B5C /* BatchesModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesModelProtocol.swift; sourceTree = "<group>"; };
+		04C71ADD2405C696005C6B5C /* DatasetsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04C71ADF2405C6A9005C6B5C /* DatasetsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsPresenterProtocol.swift; sourceTree = "<group>"; };
+		04C71AE12405C6BC005C6B5C /* DatasetsModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetsModelProtocol.swift; sourceTree = "<group>"; };
+		04C71AE32405C6E4005C6B5C /* SpecificBranchViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBranchViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04C71AE52405C6FE005C6B5C /* SpecificBranchPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBranchPresenterProtocol.swift; sourceTree = "<group>"; };
+		04C71AE72405C718005C6B5C /* SpecificBranchModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBranchModelProtocol.swift; sourceTree = "<group>"; };
 		04CFB42223F365F60070B1B5 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		04E9FBC32423DA3E000FBF95 /* BatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchError.swift; sourceTree = "<group>"; };
+		04E9FBC52423EA63000FBF95 /* ErrorDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		1EA6CD9BDD6169C1E7CAE005 /* Pods-adobe-exp-batch-statusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-statusTests.release.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-statusTests/Pods-adobe-exp-batch-statusTests.release.xcconfig"; sourceTree = "<group>"; };
 		32A80B0CC944380C2914582C /* Pods_adobe_exp_batch_statusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adobe_exp_batch_statusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4765DB3450EC04E708ADB1FE /* Pods-adobe-exp-batch-statusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adobe-exp-batch-statusTests.debug.xcconfig"; path = "Target Support Files/Pods-adobe-exp-batch-statusTests/Pods-adobe-exp-batch-statusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +120,6 @@
 		DBC36BE723E36178000ED738 /* adobe-exp-batch-status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adobe-exp-batch-status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC36BEA23E36178000ED738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC36BEC23E36178000ED738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBC36BEE23E36178000ED738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBC36BF123E36178000ED738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBC36BF323E36179000ED738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC36BF623E36179000ED738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +171,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C71ABC2405BC50005C6B5C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				04C71ABD2405BC76005C6B5C /* DatasetsTableViewCell.swift */,
+				04C71ABF2405BFAA005C6B5C /* BatchesTableViewCell.swift */,
+				04E9FBC52423EA63000FBF95 /* ErrorDetailsTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		04C71AD32405C616005C6B5C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */,
+				DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */,
+				DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04C71AD42405C620005C6B5C /* Datasets */ = {
+			isa = PBXGroup;
+			children = (
+				04C71ADD2405C696005C6B5C /* DatasetsViewControllerProtocol.swift */,
+				04C71ADF2405C6A9005C6B5C /* DatasetsPresenterProtocol.swift */,
+				04C71AE12405C6BC005C6B5C /* DatasetsModelProtocol.swift */,
+			);
+			path = Datasets;
+			sourceTree = "<group>";
+		};
+		04C71AD52405C627005C6B5C /* Batches */ = {
+			isa = PBXGroup;
+			children = (
+				04C71AD72405C646005C6B5C /* BatchesViewControllerProtocol.swift */,
+				04C71AD92405C65B005C6B5C /* BatchesPresenterProtocol.swift */,
+				04C71ADB2405C67C005C6B5C /* BatchesModelProtocol.swift */,
+			);
+			path = Batches;
+			sourceTree = "<group>";
+		};
+		04C71AD62405C62B005C6B5C /* SpecificBatch */ = {
+			isa = PBXGroup;
+			children = (
+				04C71AE32405C6E4005C6B5C /* SpecificBranchViewControllerProtocol.swift */,
+				04C71AE52405C6FE005C6B5C /* SpecificBranchPresenterProtocol.swift */,
+				04C71AE72405C718005C6B5C /* SpecificBranchModelProtocol.swift */,
+			);
+			path = SpecificBatch;
+			sourceTree = "<group>";
+		};
 		6F76E90FE15D7C8732D6BA66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				DBC36C3823E377A3000ED738 /* adobe-exp-batch-status.entitlements */,
+				04C71ABC2405BC50005C6B5C /* CustomViews */,
 				DBC36C3123E37487000ED738 /* Models */,
 				DBC36C2723E3713B000ED738 /* Protocols */,
 				DBC36C2623E3712F000ED738 /* Presenters */,
@@ -177,7 +278,6 @@
 				DBC36C1A23E36820000ED738 /* Objects */,
 				DBC36BEA23E36178000ED738 /* AppDelegate.swift */,
 				DBC36BEC23E36178000ED738 /* SceneDelegate.swift */,
-				DBC36BEE23E36178000ED738 /* ViewController.swift */,
 				DBC36BF023E36178000ED738 /* Main.storyboard */,
 				DBC36BF323E36179000ED738 /* Assets.xcassets */,
 				DBC36BF523E36179000ED738 /* LaunchScreen.storyboard */,
@@ -211,6 +311,11 @@
 			children = (
 				DBC36C1B23E36869000ED738 /* AuthInfo.swift */,
 				DBC36C1E23E36893000ED738 /* AuthToken.swift */,
+				045BB1BF2405DBC500D74F36 /* Dataset.swift */,
+				0481970A2418317B00B5E2E0 /* Batch.swift */,
+				0481970C24183DA000B5E2E0 /* DateExtension.swift */,
+				0481970E241844FF00B5E2E0 /* BatchDetails.swift */,
+				04E9FBC32423DA3E000FBF95 /* BatchError.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -219,6 +324,9 @@
 			isa = PBXGroup;
 			children = (
 				DBC36C2223E36B3E000ED738 /* LoginViewController.swift */,
+				04C71AC12405C4D1005C6B5C /* DatasetsTableViewController.swift */,
+				04C71AC32405C4DF005C6B5C /* BatchesTableViewController.swift */,
+				04C71AC52405C4FE005C6B5C /* BatchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -227,6 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				DBC36C2E23E3725C000ED738 /* LoginPresenter.swift */,
+				04C71AC72405C5AB005C6B5C /* DatasetsPresenter.swift */,
+				04C71AC92405C5BD005C6B5C /* BatchesPresenter.swift */,
+				04C71ACB2405C5CD005C6B5C /* SpecificBatchPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -234,9 +345,10 @@
 		DBC36C2723E3713B000ED738 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				DBC36C2823E3714B000ED738 /* LoginPresenterProtocol.swift */,
-				DBC36C2B23E371C7000ED738 /* LoginViewControllerProtocol.swift */,
-				DBC36C3A23E379FA000ED738 /* LoginModelProtocol.swift */,
+				04C71AD62405C62B005C6B5C /* SpecificBatch */,
+				04C71AD52405C627005C6B5C /* Batches */,
+				04C71AD42405C620005C6B5C /* Datasets */,
+				04C71AD32405C616005C6B5C /* Login */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -245,6 +357,9 @@
 			isa = PBXGroup;
 			children = (
 				DBC36C3223E37496000ED738 /* LoginModel.swift */,
+				04C71ACD2405C5E1005C6B5C /* DatasetsModel.swift */,
+				04C71ACF2405C5F2005C6B5C /* BatchesModel.swift */,
+				04C71AD12405C606005C6B5C /* SpecificBatchModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -489,18 +604,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C71AC02405BFAA005C6B5C /* BatchesTableViewCell.swift in Sources */,
+				0481970D24183DA000B5E2E0 /* DateExtension.swift in Sources */,
+				04C71ADA2405C65B005C6B5C /* BatchesPresenterProtocol.swift in Sources */,
+				04C71AE42405C6E4005C6B5C /* SpecificBranchViewControllerProtocol.swift in Sources */,
+				04C71ACE2405C5E1005C6B5C /* DatasetsModel.swift in Sources */,
+				04C71ABE2405BC76005C6B5C /* DatasetsTableViewCell.swift in Sources */,
+				04C71ADE2405C696005C6B5C /* DatasetsViewControllerProtocol.swift in Sources */,
+				04C71AE62405C6FE005C6B5C /* SpecificBranchPresenterProtocol.swift in Sources */,
+				04C71ADC2405C67C005C6B5C /* BatchesModelProtocol.swift in Sources */,
+				04C71AC22405C4D1005C6B5C /* DatasetsTableViewController.swift in Sources */,
 				DBC36C2323E36B3E000ED738 /* LoginViewController.swift in Sources */,
 				DBC36C3623E374EE000ED738 /* Constants.swift in Sources */,
 				DBC36C2923E3714B000ED738 /* LoginPresenterProtocol.swift in Sources */,
+				04E9FBC62423EA63000FBF95 /* ErrorDetailsTableViewCell.swift in Sources */,
+				04C71AC62405C4FE005C6B5C /* BatchViewController.swift in Sources */,
+				04C71AD22405C606005C6B5C /* SpecificBatchModel.swift in Sources */,
 				DBC36C2C23E371C7000ED738 /* LoginViewControllerProtocol.swift in Sources */,
 				DBC36C2F23E3725C000ED738 /* LoginPresenter.swift in Sources */,
-				DBC36BEF23E36178000ED738 /* ViewController.swift in Sources */,
+				04C71AC42405C4DF005C6B5C /* BatchesTableViewController.swift in Sources */,
+				04C71AD02405C5F2005C6B5C /* BatchesModel.swift in Sources */,
+				045BB1C02405DBC500D74F36 /* Dataset.swift in Sources */,
+				04C71AE02405C6A9005C6B5C /* DatasetsPresenterProtocol.swift in Sources */,
 				DBC36C3323E37496000ED738 /* LoginModel.swift in Sources */,
+				04C71AE22405C6BC005C6B5C /* DatasetsModelProtocol.swift in Sources */,
+				04C71ACA2405C5BD005C6B5C /* BatchesPresenter.swift in Sources */,
 				DBC36C3B23E379FA000ED738 /* LoginModelProtocol.swift in Sources */,
+				04C71AD82405C646005C6B5C /* BatchesViewControllerProtocol.swift in Sources */,
+				0481970F241844FF00B5E2E0 /* BatchDetails.swift in Sources */,
+				04E9FBC42423DA3E000FBF95 /* BatchError.swift in Sources */,
+				04C71AE82405C718005C6B5C /* SpecificBranchModelProtocol.swift in Sources */,
 				DBC36BEB23E36178000ED738 /* AppDelegate.swift in Sources */,
+				04C71ACC2405C5CD005C6B5C /* SpecificBatchPresenter.swift in Sources */,
 				DBC36BED23E36178000ED738 /* SceneDelegate.swift in Sources */,
+				0481970B2418317B00B5E2E0 /* Batch.swift in Sources */,
 				DBC36C1F23E36893000ED738 /* AuthToken.swift in Sources */,
 				DBC36C1C23E36869000ED738 /* AuthInfo.swift in Sources */,
+				04C71AC82405C5AB005C6B5C /* DatasetsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

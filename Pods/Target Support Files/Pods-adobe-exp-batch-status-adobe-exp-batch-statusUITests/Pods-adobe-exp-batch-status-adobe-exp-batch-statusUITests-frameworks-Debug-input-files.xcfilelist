@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests/Pods-adobe-exp-batch-status-adobe-exp-batch-statusUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyCrypto/SwiftyCrypto.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJWT/SwiftyJWT.framework

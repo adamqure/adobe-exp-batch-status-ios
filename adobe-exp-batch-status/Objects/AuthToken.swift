@@ -13,15 +13,19 @@ import Foundation
  POST https://ims-na1.adobelogin.com/ims/exchange/jwt/
 
  */
+var auth = AuthToken(token: "", expiration: 0, jwt: "")
 class AuthToken {
     //The token is the bearer token used to authorize a user session
     var token: String
     
     //The expiration is the expiration date of the token above in string format
-    var expiration: String
+    var expiration: Int
     
-    init(token: String, expiration: String) {
+    var jwt: String
+    
+    init(token: String, expiration: Int, jwt: String) {
         self.token = token
         self.expiration = expiration
+        self.jwt = jwt
     }
 }

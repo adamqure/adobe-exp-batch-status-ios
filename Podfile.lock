@@ -1,5 +1,6 @@
 PODS:
   - CryptoSwift (1.3.0)
+  - KeychainAccess (4.1.0)
   - SwiftyCrypto (0.0.1)
   - SwiftyJSON (5.0.0)
   - SwiftyJWT (0.0.3):
@@ -10,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - CryptoSwift
+  - KeychainAccess
   - SwiftyJSON
   - SwiftyJWT
   - SwiftyRSA
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CryptoSwift
+    - KeychainAccess
     - SwiftyCrypto
     - SwiftyJSON
     - SwiftyJWT
@@ -24,11 +27,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CryptoSwift: 1283821600233bdbeb96d7b389c3288c3bf77211
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   SwiftyCrypto: ab59cdb153a7ca99b657fa8d9ebd2ebbd7694bbe
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyJWT: e46e8457138c6567a1a9ff05a6efc8ef678c1187
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
 
-PODFILE CHECKSUM: b82b575916483c68236326ded2335a266a14ef55
+PODFILE CHECKSUM: a4d88c5a16ec13c90c9dccbf0282d37073c9fb02
 
 COCOAPODS: 1.8.4

@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJWT
 import SwiftyCrypto
 import SwiftyJSON
+import KeychainAccess
 
 class LoginModel: LoginModelProtocol {
     
@@ -37,9 +38,7 @@ class LoginModel: LoginModelProtocol {
     func login(clientSecret: String, clientId: String, organizationID: String, technicalAccountID: String) {
         //Call the login method
         let jwt = createJWT(imsOrg: organizationID, sub: technicalAccountID)
-        
-        print("JWT: " + jwt + "\n\n")
-        
+                
         let headers = ["Content-Type": "application/x-www-form-urlencoded"]
 
         let postData = NSMutableData(data: "client_id=\(self.api_key)&client_secret=\(clientSecret)&jwt_token=\(jwt)".data(using: String.Encoding.utf8)!)
@@ -50,29 +49,46 @@ class LoginModel: LoginModelProtocol {
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers
         request.httpBody = postData as Data
+        
+        authInfo.clientSecret = clientSecret
+        authInfo.imsOrg = organizationID
+        authInfo.sub = technicalAccountID
+        authInfo.clientID = clientId
+        authInfo.apiKey = self.api_key
+        auth.jwt = jwt
 
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            
             if (error != nil) {
                 print(error!)
                 self.callback?.loginFailed()
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse!)
-                if httpResponse?.statusCode == 400 {
-                    self.callback?.loginFailed()
-                    return
-                }
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                    print(json)
-                    self.callback?.loginSuccessful()
-                } catch {
-                    print(error)
-                    self.callback?.loginFailed()
-                }
-
             }
+            guard let dataResponse = data else { self.callback?.loginFailed()
+                return
+            }
+            print(String(data: dataResponse, encoding: .utf8)!)
+            let httpResponse = response as? HTTPURLResponse
+            if httpResponse?.statusCode == 400 {
+                self.callback?.loginFailed()
+                return
+            }
+            do {
+                let dictionary = try JSONSerialization.jsonObject(with: dataResponse, options: []) as! NSDictionary
+                auth.token = dictionary.value(forKey: "access_token") as! String
+                auth.expiration = dictionary.value(forKey: "expires_in") as! Int
+                let keychain = Keychain(service: "com.example.adobe-exp-batch-status-keychain")
+                keychain["org_id"] = authInfo.imsOrg
+                keychain["sub"] = authInfo.sub
+                keychain["client_id"] = authInfo.clientID
+                keychain["client_secret"] = authInfo.clientSecret
+                keychain["access_token"] = auth.token
+                keychain["expires_in"] = String(auth.expiration)
+                self.callback?.loginSuccessful()
+            } catch {
+                self.callback?.loginFailed()
+            }
+            
         })
 
         dataTask.resume()

@@ -10,7 +10,8 @@ target 'adobe-exp-batch-status' do
   pod 'SwiftyRSA'
   pod 'SwiftyJWT'
   pod 'SwiftyJSON'
-
+  pod 'KeychainAccess'
+  
   target 'adobe-exp-batch-statusTests' do
     inherit! :search_paths
     # Pods for testing
